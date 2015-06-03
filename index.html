@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L'Annuaire d'Haiti</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/site.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="header">
+        <div class="container">
+            <header>
+            <h1 class="text-center">
+                <a href="index.html" title="L'Annuaire d'Haiti">
+                    <img src="img/rsz_logo.png">
+                </a>
+            </h1>
+            </header>
+        </div>
+    </section>
+    <nav class="navbar navbar-default navbar-custom">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/rsz_logo.png" height="50">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><i class="fa fa-home fa-lg"></i></a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="business-page.html">Business Page</a></li>
+            <li><a href="page.html">Page</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Liste d'Entreprises <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="search.html" id="searchAnchor">
+                    <i class="fa fa-search"></i>
+                </a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <section class="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="search.html" method="GET" role="form">
+                        <div class="row">
+                            <div class="input-group">
+                                <input id="s" name="s" type="text" class="form-control" placeholder="Rechercher une Entreprise...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="submit">
+                                        <i class="fa fa-search"></i> Rechercher!
+                                    </button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="ah-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#ah-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#ah-carousel" data-slide-to="1"></li>
+                    <li data-target="#ah-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="#"><img width="100%" src="images/slide1.jpg" alt="Animal1"></a>
+                        <!-- <div class="carousel-caption">
+                            <h3>Animal One</h3>
+                            <p>Isn't she beautiful?</p>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <a href="#"><img width="100%" src="images/slide2.jpg" alt="Animal2"></a>
+                        <!-- <div class="carousel-caption">
+                            Animal Two
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <a href="#"><img width="100%" src="images/slide3.jpg" alt="Animal3"></a>
+                        <!-- <div class="carousel-caption">
+                            Animal Three
+                        </div> -->
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#ah-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#ah-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="entries">
+        <div class="container">
+            <h2 class="text-center">Dernières entrées dans notre base</h2>
+            <div class="row marketing">
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-rounded img-bordered img-responsive" src="images/entry1.jpg" alt="Adopt a Pet">
+                    <h4 class="text-center">Digicel <br>
+                        <small>(Turgeau)</small>
+                    </h4>
+                    <p>
+                        <a href="#" class="btn btn-block btn-yellow btn-lg">
+                            Voir les détails
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-rounded img-bordered img-responsive" src="images/entry7.jpg" alt="Adopt a Pet">
+                    <h4 class="text-center">Natcom <br>
+                        <small>(Turgeau, Pont-Morin)</small></h4>
+                    <p>
+                        <a href="#" class="btn btn-block btn-yellow btn-lg">
+                            Voir les détails
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-rounded img-bordered img-responsive" src="images/entry3.jpg" alt="Adopt a Pet">
+                    <h4 class="text-center">Sogebank <br>
+                        <small>(Delmas)</small>
+                    </h4>
+                    <p>
+                        <a href="#" class="btn btn-block btn-yellow btn-lg">
+                            Voir les détails
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-rounded img-bordered img-responsive" src="images/entry4.jpg" alt="Adopt a Pet">
+                    <h4 class="text-center">Aciérie d'Haiti <br>
+                        <small>(Route Neuve)</small>
+                    </h4>
+                    <p>
+                        <a href="#" class="btn btn-block btn-yellow btn-lg">
+                            Voir les détails
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors bg-white">
+        <div class="container">
+            <h2 class="text-center">Nos parrainages</h2>
+            <div class="row marketing">
+                <div class="col-sm-3 col-xs-6">
+                   <p>
+                       <a href="#">
+                           <img class="img-responsive" src="images/entry1.jpg" alt="Adopt a Pet">
+                       </a>
+                   </p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <p>
+                        <a href="#">
+                            <img class="img-responsive" src="images/entry2.jpg" alt="Adopt a Pet">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <p>
+                        <a href="#">
+                            <img class="img-responsive" src="images/entry3.jpg" alt="Adopt a Pet">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <p>
+                        <a href="#">
+                            <img class="img-responsive" src="images/entry3.jpg" alt="Adopt a Pet">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                    <h4>Catégorie d'Entreprises</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Agences de Voyages</a></li>
+                        <li><a href="">Agences Immobilières</a></li>
+                        <li><a href="">Ambassades d'Haïti à l'Étranger</a></li>
+                        <li><a href="">Ambassades et Consulats en Haïti</a></li>
+                        <li><a href="">Bars/Night-Clubs/Spectacles</a></li>
+                        <li><a href="">Boutiques et Accessoires</a></li>
+                        <li><a href="">Coiffure et Beauté</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Gymnastique</a></li>
+                        <li><a href="">Librairies – Papeteries</a></li>
+                        <li><a href="">Produits Pharmaceutiques</a></li>
+                        <li><a href="">Matériaux de Construction</a></li>
+                        <li><a href="">Publicité</a></li>
+                        <li><a href="">Ressources Humaines</a></li>
+                        <li><a href="">Restaurants</a></li>
+                        <li><a href="">Stations-Services</a></li>
+                        <li><a href="">Transport Routier</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <h4>Catégorie d'Entreprises</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Agences de Voyages</a></li>
+                        <li><a href="">Agences Immobilières</a></li>
+                        <li><a href="">Ambassades d'Haïti à l'Étranger</a></li>
+                        <li><a href="">Ambassades et Consulats en Haïti</a></li>
+                        <li><a href="">Bars/Night-Clubs/Spectacles</a></li>
+                        <li><a href="">Boutiques et Accessoires</a></li>
+                        <li><a href="">Coiffure et Beauté</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Gymnastique</a></li>
+                        <li><a href="">Librairies – Papeteries</a></li>
+                        <li><a href="">Produits Pharmaceutiques</a></li>
+                        <li><a href="">Matériaux de Construction</a></li>
+                        <li><a href="">Publicité</a></li>
+                        <li><a href="">Ressources Humaines</a></li>
+                        <li><a href="">Restaurants</a></li>
+                        <li><a href="">Stations-Services</a></li>
+                        <li><a href="">Transport Routier</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <h4>Catégorie d'Entreprises</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Agences de Voyages</a></li>
+                        <li><a href="">Agences Immobilières</a></li>
+                        <li><a href="">Ambassades d'Haïti à l'Étranger</a></li>
+                        <li><a href="">Ambassades et Consulats en Haïti</a></li>
+                        <li><a href="">Bars/Night-Clubs/Spectacles</a></li>
+                        <li><a href="">Boutiques et Accessoires</a></li>
+                        <li><a href="">Coiffure et Beauté</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Gymnastique</a></li>
+                        <li><a href="">Librairies – Papeteries</a></li>
+                        <li><a href="">Produits Pharmaceutiques</a></li>
+                        <li><a href="">Matériaux de Construction</a></li>
+                        <li><a href="">Publicité</a></li>
+                        <li><a href="">Ressources Humaines</a></li>
+                        <li><a href="">Restaurants</a></li>
+                        <li><a href="">Stations-Services</a></li>
+                        <li><a href="">Transport Routier</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <h4>Catégorie d'Entreprises</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Agences de Voyages</a></li>
+                        <li><a href="">Agences Immobilières</a></li>
+                        <li><a href="">Ambassades d'Haïti à l'Étranger</a></li>
+                        <li><a href="">Ambassades et Consulats en Haïti</a></li>
+                        <li><a href="">Bars/Night-Clubs/Spectacles</a></li>
+                        <li><a href="">Boutiques et Accessoires</a></li>
+                        <li><a href="">Coiffure et Beauté</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Décoration</a></li>
+                        <li><a href="">Gymnastique</a></li>
+                        <li><a href="">Librairies – Papeteries</a></li>
+                        <li><a href="">Produits Pharmaceutiques</a></li>
+                        <li><a href="">Matériaux de Construction</a></li>
+                        <li><a href="">Publicité</a></li>
+                        <li><a href="">Ressources Humaines</a></li>
+                        <li><a href="">Restaurants</a></li>
+                        <li><a href="">Stations-Services</a></li>
+                        <li><a href="">Transport Routier</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        <a href="http://www.annuairehaiti.com">
+                            <img class="img-responsive img-rounded" src="images/lannuaire-dhaiti-300x111.png">
+                        </a>
+                    </p>
+                    <p class="text-center">&copy; 2015 <strong>L'Annuaire d'Haiti</strong></p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <p>
+                        <a href="http://www.jgbnd.com" target="_blank">
+                            <img class="img-responsive" src="images/logo-jgbnd.png">
+                        </a>
+                    </p>
+                    <p>Une production de <a href="http://www.jgbnd.com" target="_blank">JGB! Neat Design</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

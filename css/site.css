@@ -1,0 +1,300 @@
+body {
+    font-family: 'Open Sans', verdana, sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+----------ingle`----------------------------------------------------*/
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+    margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+    max-width: 100%;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+/* Wordpress Styles*/
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.footer h4 {
+    color: #FAD008;
+}
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.navbar-custom {
+    background-color: #000;
+    color: white;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    background-color: #fff;
+    color: #334D5C;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: #fff;
+    color: #334D5C;
+}
+.navbar-brand {
+    padding-top: 0;
+}
+.navbar-brand:hover {
+    background-color: transparent !important;
+}
+
+#navbar {
+    background-color: #000000;
+    font-weight: bold;
+}
+
+.entries {
+    background-color: #eee;
+}
+
+.footer {
+    /*background: #243138;*/
+    background-color: #000;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer img {
+    margin: auto;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.copy {
+    border-top: 2px solid white;
+}
+
+.navbar-custom .navbar-toggle,
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #000;
+}
+
+hr {
+    border-top: solid 1px #ABABAB;
+}
+
+section.header {
+    background-color: #FAD008;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-custom .navbar-brand {
+        display: none;
+    }
+    .left-content {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border-radius: 6px;
+    }
+    section.header {
+         margin-top: -1em;
+    }
+}
+@media screen and (max-width: 767px) {
+    header h1 {
+        display: none;
+    }
+
+    .navbar-custom {
+        background-color: #FAD008;
+    }
+
+    .business-title {
+        padding-top: .5em;
+    }
+}
+
+.sponsors img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.sponsors img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+section.content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #eee;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+img.business-logo {
+    margin: -8em auto 0;
+}
+
+.img-bordered {
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+}
+img {
+    max-width: 100%;
+}
+
+.left-content, .right-content {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.left-content .data {
+    margin-top: 1em;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+/* Responsive Google Maps */
+.google-maps {
+    position: relative;
+    padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+/* End Responsive Google Maps */
+
+.social-group {
+    margin-top: .5em;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .social-group .social-icons {
+        display: none;
+    }
+}
+
+/* Custom Button color */
+.btn-yellow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    background-color: #FAD008;
+    border-color: #CAA700;
+}
+/* End custom button color */
+section.search {
+    margin-top: 1em;
+    display: none;
+    font-weight: bold;
+}
+
+.post-relative {
+    position: relative;
+}
+
+.right-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+@media (max-width: 495px) {
+    .fab {
+        display: none;
+    }
+}
