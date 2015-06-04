@@ -225,6 +225,11 @@ img.business-logo {
 img {
     max-width: 100%;
 }
+.img-block {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 .left-content, .right-content {
     margin-bottom: 1em;

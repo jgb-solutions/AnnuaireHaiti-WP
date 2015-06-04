@@ -29,6 +29,7 @@ if ( ! function_exists( 'ah_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'ah-logo', 319, 319, true );
+		add_image_size( 'ah-banner', 768, 317, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

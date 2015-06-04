@@ -15,9 +15,20 @@
 								<small>Posté le <?php the_date('d/m/Y (h:i a)'); ?> |
 									Catégorie: <a href="<?php echo get_category_link(get_the_category()[0]->term_id); ?>">
 									<?php echo get_the_category()[0]->name ?></a>
+
 								</small>
 							</h2>
 
+							<div class="row">
+																<?php
+								$attr = array(
+									'class'		=> 'img-block img-responsive',
+									'alt'		=> get_the_title(),
+									'title'		=> get_the_title()
+								);
+								the_post_thumbnail('ah-banner', $attr ); ?>
+							</div>
+							<br>
 							<?php include 'single-share.php'; ?>
 						</header><!-- .entry-header -->
 						<hr>
@@ -26,21 +37,16 @@
 						</div><!-- .entry-content -->
 
 						<footer class="entry-footer">
-							<?php the_content(); ?>
+							<hr>
+							<?php the_tags( 'Mots Clés: ', ', ', '' ); ?>
 						</footer><!-- .entry-footer -->
 					</article><!-- #post-## -->
 
-					<!-- Display Tag -->
-					<?php	if ( $tags = get_the_tags() ): ?>
-					<div>
-						Mots clés:
-					 	<?php foreach ( $tags as $tag ): ?>
-					 	<a class="ui-btn ui-btn-inline ui-icon-tag ui-btn-icon-left" href="<?php echo get_tag_link($tag->term_id); ?>"><?php echo $tag->name; ?></a>
-					 	<?php endforeach ?>
-					</div>
-					<?php endif; ?>
-
 				<?php endwhile; // end of the loop. ?>
+
+				<?php include_once 'related-posts.php'; ?>
+
+				<hr>
 
 				<?php
 				// If comments are open or we have at least one comment, load up the comment template
