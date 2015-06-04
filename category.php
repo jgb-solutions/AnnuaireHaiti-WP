@@ -7,7 +7,7 @@
             <div class="col-sm-8 left-content">
 
 				<?php if ( have_posts() ): ?>
-					<h2 class="text-center">Catégorie: <?php echo get_the_category()[0]->name; ?></h2>
+					<h2 class="text-center">Articles dans la catégorie: <?php echo get_the_category()[0]->name; ?></h2>
 					<hr>
             	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -43,6 +43,11 @@
 					<p>Utilisez la forme pour rechercher une entreprise ou un article ou retournez sur <a href="<?php echo home_url('/'); ?>">la page d'accueil.</a></p>
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
+
+				<div class="col-sm-12 text-center">
+					<?php paginate(); ?>
+				</div>
+
 
             </div>
 

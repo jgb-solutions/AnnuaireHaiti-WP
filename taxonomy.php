@@ -13,22 +13,28 @@
 
 					switch ( $tax ) {
 						case 'dpartement':
-							$text = '';
+							$text = 'Entreprises dans le département: ';
 							break;
-						
-						default:
-							# code...
+						case 'commune':
+							$text = 'Entreprises dans la commune de: ';
+							break;
+						case 'ville':
+							$text = 'Entreprises dans la ville de: ';
+							break;
+						case 'categorie_dentreprise':
+							$text = 'Catégorie d\'entreprise: ';
 							break;
 					}
-					echo get_query_var('taxonomy' );
 					$taxonomy = get_the_terms( $post->ID, $tax )[0];
 				?>
+
 					<h2 class="text-center"><?php echo $text . $taxonomy->name; ?></h2>
+
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="row">
 						<hr>
-						<div class="col-sm-4">
+						<div class="col-sm-4 col-xs-4">
 
 							<?php
 							if ( has_post_thumbnail() ):
@@ -46,18 +52,22 @@
 								</a>
 							<?php endif; ?>
 						</div>
-						<div class="col-sm-8 ">
-				            <a href="<?php the_permalink(); ?>"><h3 class="noMarginTop"><?php the_title(); ?></h3></a>
+						<div class="col-sm-8 col-xs-8">
+				            <a href="<?php the_permalink(); ?>"><h3 class="noMarginTop forced"><?php the_title(); ?></h3></a>
 			               	<?php the_excerpt(); ?>
 						</div>
 					</div>
 
 				<?php endwhile; ?>
 				<?php else: ?>
-					<h2 class="text-center">Désolé! On a rien trouvé pour: <?php echo esc_attr( get_search_query() ); ?></h2>
+					<h2 class="text-center">Désolé! Rien à voir ici</h2>
 					<p>Utilisez la forme pour rechercher une entreprise ou un article ou retournez sur <a href="<?php echo home_url('/'); ?>">la page d'accueil.</a></p>
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
+
+				<div class="col-sm-12 text-center">
+					<?php paginate(); ?>
+				</div>
 
             </div>
 

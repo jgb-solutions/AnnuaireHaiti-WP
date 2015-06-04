@@ -7,7 +7,9 @@
             <div class="col-sm-8 left-content">
 
 				<?php if ( have_posts() ): ?>
-					<h2 class="text-center">Catégorie d'entreprise: <?php echo get_the_terms( $post->ID, 'categorie_dentreprise' )[0]->name; ?></h2>
+
+					<h2 class="text-center">Articles contenant le mot clé: <?php single_tag_title() ?></h2>
+
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="row">
@@ -26,7 +28,7 @@
 								</a>
 							<?php else: ?>
 								<a href="<?php the_permalink(); ?>">
-									<img src="https://placeholdit.imgix.net/~text?txtsize=17&txt=Featured+Image&w=319&h=319&txttrack=0">
+									<img class="img-bordered img-rounded img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=17&txt=Featured+Image&w=319&h=319&txttrack=0">
 								</a>
 							<?php endif; ?>
 						</div>
@@ -42,6 +44,10 @@
 					<p>Utilisez la forme pour rechercher une entreprise ou un article ou retournez sur <a href="<?php echo home_url('/'); ?>">la page d'accueil.</a></p>
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
+
+				<div class="col-sm-12 text-center">
+					<?php paginate(); ?>
+				</div>
 
             </div>
 

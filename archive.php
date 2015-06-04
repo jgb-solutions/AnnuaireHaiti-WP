@@ -41,6 +41,10 @@
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
 
+				<div class="col-sm-12 text-center">
+					<?php paginate(); ?>
+				</div>
+
             </div>
 
 			<?php get_sidebar(); ?>

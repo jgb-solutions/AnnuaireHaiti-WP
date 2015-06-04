@@ -1,49 +1,60 @@
-<?php
-/**
- * The template for displaying archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package JGB! Neat Design
- */
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 left-content">
 
-		<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ): ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+					<h2 class="text-center">Toutes les entreprises</h2>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+					<div class="row">
+						<hr>
+						<div class="col-sm-4 col-xs-4">
 
-			<?php endwhile; ?>
+							<?php
+							if ( has_post_thumbnail() ):
+								$attr = array(
+									'class'		=> 'img-responsive img-rounded img-bordered',
+									'alt'		=> get_the_title(),
+									'title'		=> get_the_title()
+								);?>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('ah-logo', $attr ); ?>
+								</a>
+							<?php else: ?>
+								<a href="<?php the_permalink(); ?>">
+									<img src="https://placeholdit.imgix.net/~text?txtsize=17&txt=Featured+Image&w=319&h=319&txttrack=0">
+								</a>
+							<?php endif; ?>
+						</div>
+						<div class="col-sm-8 col-xs-8">
+				            <a href="<?php the_permalink(); ?>"><h3 class="noMarginTop forced"><?php the_title(); ?></h3></a>
+			               	<?php the_excerpt(); ?>
+						</div>
+					</div>
 
-			<?php the_posts_navigation(); ?>
+				<?php endwhile; ?>
+				<?php else: ?>
+					<h2 class="text-center">Désolé! On a rien trouvé pour: <?php echo esc_attr( get_search_query() ); ?></h2>
+					<p>Utilisez la forme pour rechercher une entreprise ou un article ou retournez sur <a href="<?php echo home_url('/'); ?>">la page d'accueil.</a></p>
+					<p><?php get_search_form(); ?></p>
+				<?php endif; ?>
 
-		<?php else : ?>
+				<div class="col-sm-12 text-center">
+					<?php paginate(); ?>
+				</div>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+            </div>
 
-		<?php endif; ?>
+			<?php get_sidebar(); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </div>
+    </div>
+</section>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

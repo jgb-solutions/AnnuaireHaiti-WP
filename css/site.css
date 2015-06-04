@@ -306,3 +306,6 @@ section.search {
         display: none;
     }
 }
+.noMarginTop.forced {
+    margin-top: 0;
+}

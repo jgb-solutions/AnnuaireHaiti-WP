@@ -129,6 +129,26 @@ $site_web	= ahgetfield('site_web');
 	                                    </tr>
 									<?php } ?>
 
+                                    <?php
+                                    $ville = '';
+                                    $terms = get_the_terms( $post->$id, 'ville' );
+
+                                    if ( $terms && ! is_wp_error( $terms ) ) {
+
+                                        foreach ( $terms as $term ) {
+                                            $ville = '<a href="' . get_term_link( $term ) . '" title="Naviguer les Entreprises de la ville de: ' . $term->name . '">' . $term->name . '</a>';
+                                        }?>
+
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-road" aria-hidden="true"></span> Ville
+                                            </td>
+                                            <td>
+                                                <?php echo $ville; ?>
+                                            </td>
+                                        </tr>
+                                    <?php } ?>
+
 									<?php
                                 	$commune = '';
 									$terms = get_the_terms( $post->$id, 'commune' );

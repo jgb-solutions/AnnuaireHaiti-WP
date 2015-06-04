@@ -39,15 +39,13 @@
 
 						<footer class="entry-footer">
 							<hr>
-							<?php the_tags( 'Mots Clés: ', ', ', '' ); ?>
+							<?php the_tags( '<strong><span class="glyphicon glyphicon-pins"></span>Mots Clés: ', ', ', '</strong>' ); ?>
 						</footer><!-- .entry-footer -->
 					</article><!-- #post-## -->
 
 				<?php endwhile; // end of the loop. ?>
 
 				<?php include_once 'related-posts.php'; ?>
-
-				<hr>
 
 				<?php
 				// If comments are open or we have at least one comment, load up the comment template
