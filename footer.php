@@ -125,7 +125,7 @@ if ( $query->have_posts() ): ?>
 
             <?php $sidebars = array( 2, 3, 4 );
             foreach ($sidebars  as $sidebar ): ?>
-                <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-3 col-xs-12">
                     <?php dynamic_sidebar( 'sidebar-footer-' . $sidebar ); ?>
                 </div>
             <?php endforeach ?>

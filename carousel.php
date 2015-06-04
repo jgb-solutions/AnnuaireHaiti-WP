@@ -4,7 +4,7 @@ $number = $number2 = 0;
 
 $args = array(
     'post_type'     => array('post', 'entreprise'),
-	'post_per_page' => 5,
+	'posts_per_page' => 5,
 	'meta_key'		=> 'ahshowslider',
 	'meta_value'	=> 1
 );
@@ -19,7 +19,7 @@ if ( $query->have_posts() ): ?>
 
             	<?php while( $query->have_posts() ): $query->the_post(); ?>
 
-	    		<li class="<?php echo ( $number < 1 ) ? 'active' : ''; ?>"data-target="#ah-carousel" data-slide-to="<?php echo $number++; ?>"></li>
+	    		<li class="<?php echo ( $number < 1 ) ? 'active' : ''; ?>" data-target="#ah-carousel" data-slide-to="<?php echo $number++; ?>"></li>
 
 	    		<?php endwhile; ?>
 
