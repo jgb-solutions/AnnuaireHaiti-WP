@@ -8,7 +8,7 @@
 
 				<?php if ( have_posts() ): ?>
 
-					<h2 class="text-center">Toutes les entreprises</h2>
+					<h2 class="text-center"><span class="glyphicon glyphicon-th"></span> Toutes les entreprises</h2>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

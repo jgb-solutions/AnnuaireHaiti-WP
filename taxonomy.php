@@ -13,16 +13,16 @@
 
 					switch ( $tax ) {
 						case 'dpartement':
-							$text = 'Entreprises dans le département: ';
+							$text = '<span class="glyphicon glyphicon-th-large"></span> Entreprises dans le département: ';
 							break;
 						case 'commune':
-							$text = 'Entreprises dans la commune de: ';
+							$text = '<span class="glyphicon glyphicon-th-large"></span> Entreprises dans la commune de: ';
 							break;
 						case 'ville':
-							$text = 'Entreprises dans la ville de: ';
+							$text = '<span class="glyphicon glyphicon-th-large"></span> Entreprises dans la ville de: ';
 							break;
 						case 'categorie_dentreprise':
-							$text = 'Catégorie d\'entreprise: ';
+							$text = '<span class="glyphicon glyphicon-th-large"></span> Catégorie d\'entreprise: ';
 							break;
 					}
 					$taxonomy = get_the_terms( $post->ID, $tax )[0];

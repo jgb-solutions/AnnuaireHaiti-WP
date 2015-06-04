@@ -54,7 +54,7 @@ $site_web	= ahgetfield('site_web');
                                   	<div class="btn-group" role="group">
                                     	<a  href="<?php echo $twitter; ?>" target="_blank" class="btn btn-info btn-lg">
                                         	<i class="fa fa-twitter"></i>
-                                        	<span class="social-icons">Twitter</span>
+                                        	<span class="social-icons fab">Twitter</span>
                                     	</a>
                                   	</div>
                                   	<?php endif; ?>
@@ -63,7 +63,7 @@ $site_web	= ahgetfield('site_web');
                                  	<div class="btn-group" role="group">
                                   		<a href="<?php echo $facebook; ?>" target="_blank" class="btn btn-primary btn-lg">
                                         	<i class="fa fa-facebook"></i>
-                                        	<span class="social-icons">Facebook</span>
+                                        	<span class="social-icons fab">Facebook</span>
                                     	</a>
 
                                  	 </div>
@@ -73,7 +73,7 @@ $site_web	= ahgetfield('site_web');
                                   	<div class="btn-group" role="group">
                                     	<a href="<?php echo $google; ?>" target="_blank" class="btn btn-danger btn-lg">
                                         	<i class="fa fa-google-plus"></i>
-                                        	<span class="social-icons">Google+</span>
+                                        	<span class="social-icons fab">Google+</span>
                                     	</a>
                                   	</div>
                               		<?php endif; ?>

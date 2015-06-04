@@ -309,3 +309,8 @@ section.search {
 .noMarginTop.forced {
     margin-top: 0;
 }
+
+span.page-numbers.current {
+    background-color: #000;
+    color: #fff;
+}

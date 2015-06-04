@@ -14,8 +14,8 @@ function paginate() {
         'current' => $current,
         'show_all' => false,
         'type' => 'array',
-        'prev_text'  => __('« Avant'),
-        'next_text'  => __('Après »'),
+        'prev_text'  => __('«« '),
+        'next_text'  => __(' »»'),
 
     );
 
