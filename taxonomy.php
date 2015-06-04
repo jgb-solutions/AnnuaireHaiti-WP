@@ -6,12 +6,28 @@
         <div class="row">
             <div class="col-sm-8 left-content">
 
-				<?php if ( have_posts() ): ?>
-					<h2 class="text-center">Résultats pour: <?php echo esc_attr( get_search_query() ); ?></h2>
-					<hr>
-            	<?php while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ):
+
+					$tax = get_query_var ( 'taxonomy' );
+					$text = '';
+
+					switch ( $tax ) {
+						case 'dpartement':
+							$text = '';
+							break;
+						
+						default:
+							# code...
+							break;
+					}
+					echo get_query_var('taxonomy' );
+					$taxonomy = get_the_terms( $post->ID, $tax )[0];
+				?>
+					<h2 class="text-center"><?php echo $text . $taxonomy->name; ?></h2>
+				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="row">
+						<hr>
 						<div class="col-sm-4">
 
 							<?php
@@ -35,7 +51,6 @@
 			               	<?php the_excerpt(); ?>
 						</div>
 					</div>
-					<hr>
 
 				<?php endwhile; ?>
 				<?php else: ?>

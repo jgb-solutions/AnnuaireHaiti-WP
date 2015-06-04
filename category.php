@@ -7,7 +7,7 @@
             <div class="col-sm-8 left-content">
 
 				<?php if ( have_posts() ): ?>
-					<h2 class="text-center">Résultats pour: <?php echo esc_attr( get_search_query() ); ?></h2>
+					<h2 class="text-center">Catégorie: <?php echo get_the_category()[0]->name; ?></h2>
 					<hr>
             	<?php while ( have_posts() ) : the_post(); ?>
 

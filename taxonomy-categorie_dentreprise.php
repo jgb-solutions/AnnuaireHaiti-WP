@@ -7,11 +7,11 @@
             <div class="col-sm-8 left-content">
 
 				<?php if ( have_posts() ): ?>
-					<h2 class="text-center">Résultats pour: <?php echo esc_attr( get_search_query() ); ?></h2>
-					<hr>
-            	<?php while ( have_posts() ) : the_post(); ?>
+					<h2 class="text-center">Catégorie d'entreprise: <?php echo get_the_terms( $post->ID, 'categorie_dentreprise' )[0]->name; ?></h2>
+				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="row">
+						<hr>
 						<div class="col-sm-4">
 
 							<?php
@@ -35,7 +35,6 @@
 			               	<?php the_excerpt(); ?>
 						</div>
 					</div>
-					<hr>
 
 				<?php endwhile; ?>
 				<?php else: ?>

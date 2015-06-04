@@ -31,7 +31,7 @@
 							<a href="<?php echo get_category_link( $category ); ?>"><?php echo wp_get_attachment_image( $attachment_id, 'ah-logo', false, $attr ); ?></a>
 						</div>
 						<div class="col-sm-8 col-xs-6">
-							<h3><a href="<?php echo get_category_link( $category ); ?>"><?php echo $category->name ?></a></h3>
+							<h3 class="noMarginTop"><a href="<?php echo get_category_link( $category ); ?>"><?php echo $category->name ?></a></h3>
 							<?php echo $category->description; ?>
 						</div>
 					</div>

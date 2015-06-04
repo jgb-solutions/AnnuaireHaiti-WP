@@ -71,9 +71,12 @@ object {
 
 /* Customize container */
 @media (min-width: 768px) {
-  .container {
-    max-width: 960px;
-  }
+    .container {
+        max-width: 960px;
+    }
+    .noMarginTop {
+        margin-top: 0;
+    }
 }
 
 .footer h4 {
