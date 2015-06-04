@@ -82,6 +82,25 @@ if ( $query->have_posts() ): ?>
                         }
                     ?>
                 </ul>
+
+                <h4 id="cat-entreprise-foot">Entreprises par Ville</h4>
+                <ul class="list-unstyled">
+                    <?php
+
+                        $args = array(
+                            'orderby'   => 'name',
+                            'order'     => 'ASC',
+                            'taxonomy'  => 'ville',
+                        );
+
+                        $categories = get_categories($args);
+
+                        foreach( $categories as $category )
+                        {
+                            echo "<li><a href='" . get_term_link( $category ) . "'>$category->name</a>";
+                        }
+                    ?>
+                </ul>
             </div>
             <div class="col-sm-3 col-xs-6">
                 <h4 id="cat-entreprise-foot">Entreprises par Commune</h4>
