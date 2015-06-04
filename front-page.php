@@ -53,7 +53,7 @@ if ( $query->have_posts() ):
                 </h4>
                 <p>
                     <a href="<?php the_permalink(); ?>" class="btn btn-block btn-yellow btn-lg">
-                        Voir <?php the_title(); ?>
+                        Voir les détails
                     </a>
                 </p>
             </div>

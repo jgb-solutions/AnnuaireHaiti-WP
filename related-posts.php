@@ -20,7 +20,7 @@ if ( $query->have_posts() ) : ?>
 <hr>
 <div class="col-sm-12">
 	<div class="row">
-		<h3 class="text-center">Vous pourriez aussi être intéressés par:</h3>
+		<h3 class="text-center">Vous pourriez aussi être intéressé par:</h3>
 		<div class="row marketing">
 		  <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
@@ -36,7 +36,11 @@ if ( $query->have_posts() ) : ?>
 				<a href="<?php the_permalink(); ?>">
 				  <?php the_post_thumbnail( 'ah-logo', $attr ); ?>
 				</a>
-				<h4 class="text-center"><?php the_title();?></h4>
+				<h4 class="text-center">
+					<a href="<?php the_permalink(); ?>">
+						<?php the_title();?>
+					</a>
+				</h4>
 			</div>
 
 		  <?php endwhile; ?>

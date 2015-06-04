@@ -13,9 +13,10 @@
 								<?php the_title(); ?>
 								<br>
 								<small>Posté le <?php the_date('d/m/Y (h:i a)'); ?> |
-									Catégorie: <a href="<?php echo get_category_link(get_the_category()[0]->term_id); ?>">
-									<?php echo get_the_category()[0]->name ?></a>
-
+									Catégorie:
+										<a href="<?php echo get_category_link(get_the_category()[0]->term_id); ?>">
+											<?php echo get_the_category()[0]->name ?>
+										</a>
 								</small>
 							</h2>
 
