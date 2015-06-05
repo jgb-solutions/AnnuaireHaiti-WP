@@ -4,7 +4,7 @@
             <div class="col-sm-6">
                 <h3 class="">
                     Votre entreprise n'est pas encore dans notre base? <br><hr>
-                    N'attendez pas plus longtemps, inscrivez votre entreprise dans l'annuaire du pays, nous offrons un sevice de haute qualité à un prix abordable.
+                    N'attendez pas plus longtemps, inscrivez votre entreprise dans l'annuaire du pays, nous offrons un service de haute qualité à un prix abordable.
                     <hr>$100 US ou 5000 Gourdes / Année!
                 </h3>
             </div>
