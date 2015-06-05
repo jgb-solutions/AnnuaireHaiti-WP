@@ -298,6 +298,15 @@ section.search {
     padding-left: 0;
 }
 
+.right-content ul > li {
+
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.right-content ul > li:last-child {
+    border-bottom: none;
+}
+
 .marginTop10 {
     margin-top: 10px;
 }
