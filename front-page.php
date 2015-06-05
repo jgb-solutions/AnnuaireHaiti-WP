@@ -6,7 +6,7 @@
 <?php
 
 $args = array(
-	'posts_per_page' => 4,
+	'posts_per_page' => 8,
 	'post_type'		=> 'entreprise'
 );
 
