@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-
 <?php
-
 $tel 		= ahgetfield('tel');
 $adresse 	= ahgetfield('adresse');
 $email 		= ahgetfield('email');
@@ -12,9 +10,8 @@ $google 	= ahgetfield('google');
 $fax 		= ahgetfield('fax');
 $map 		= ahgetfield('map');
 $site_web	= ahgetfield('site_web');
-
-
 ?>
+
 <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
 <section class="content">
@@ -230,9 +227,12 @@ $site_web	= ahgetfield('site_web');
 
                           <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active">
-                                    <a href="#details" aria-controls="details" role="tab" data-toggle="tab">Détails</a>
-                                </li>
+
+                                <?php if ( ! $post->post_content == "" ): ?>
+                                    <li role="presentation" class="active">
+                                        <a href="#details" aria-controls="details" role="tab" data-toggle="tab">Détails</a>
+                                    </li>
+                                <?php endif; ?>
 
                                 <?php if ( $map ): ?>
                                 	<li role="presentation">
@@ -244,9 +244,12 @@ $site_web	= ahgetfield('site_web');
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="details">
-                                    <?php the_content(); ?>
-                                </div>
+
+                                <?php if ( ! $post->post_content == "" ): ?>
+                                    <div role="tabpanel" class="tab-pane active" id="details">
+                                        <?php the_content(); ?>
+                                    </div>
+                                <?php endif; ?>
 
                                 <?php if ( $map ): ?>
                                 	<div role="tabpanel" class="tab-pane" id="carte">
