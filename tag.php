@@ -4,7 +4,7 @@
 <section class="content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 left-content">
+            <div class="col-sm-8 left-content bg-white">
 
 				<?php if ( have_posts() ): ?>
 

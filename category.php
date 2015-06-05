@@ -4,7 +4,7 @@
 <section class="content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 left-content">
+            <div class="col-sm-8 left-content bg-white">
 
 				<?php if ( have_posts() ): ?>
 					<h2 class="text-center">Articles dans la catégorie: <?php echo get_the_category()[0]->name; ?></h2>
