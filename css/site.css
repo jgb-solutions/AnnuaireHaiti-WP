@@ -314,7 +314,8 @@ section.search {
 ul.pagination {
     font-weight: bold;
 }
-span.page-numbers.current {
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover {
     background-color: #000;
     color: #fff;
 }
