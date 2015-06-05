@@ -3,7 +3,7 @@
 <section class="content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 left-content">
+            <div class="col-sm-12 left-content bg-white">
 				<h2 class="text-center"><span class="glyphicon glyphicon-th"></span> Toutes les catégories d'Entreprises</h2>
 				<div class="row">
 						<?php
