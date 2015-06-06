@@ -12,8 +12,8 @@
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
+					<hr>
 					<div class="row">
-						<hr>
 						<div class="col-sm-4">
 
 							<?php
@@ -44,7 +44,8 @@
 					<p>Utilisez la forme pour rechercher une entreprise ou un article ou retournez sur <a href="<?php echo home_url('/'); ?>">la page d'accueil.</a></p>
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
-
+				
+				<hr>
 				<div class="col-sm-12 text-center">
 					<?php paginate(); ?>
 				</div>

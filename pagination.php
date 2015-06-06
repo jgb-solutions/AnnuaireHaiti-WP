@@ -14,8 +14,8 @@ function paginate() {
         'current' => $current,
         'show_all' => false,
         'type' => 'array',
-        'prev_text'  => __('«« '),
-        'next_text'  => __(' »»'),
+        'prev_text'  => __('<span class="glyphicon glyphicon-arrow-left"></span>'),
+        'next_text'  => __('<span class="glyphicon glyphicon-arrow-right"></span>'),
 
     );
 

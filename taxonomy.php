@@ -32,8 +32,8 @@
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
+					<hr>
 					<div class="row">
-						<hr>
 						<div class="col-sm-4 col-xs-4">
 
 							<?php
@@ -65,6 +65,7 @@
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
 
+				<hr>
 				<div class="col-sm-12 text-center">
 					<?php paginate(); ?>
 				</div>

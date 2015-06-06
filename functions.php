@@ -66,7 +66,7 @@ function ah_widgets_init() {
 	    'id'            => 'sidebar-footer',
 		'description'   => 'Sidebar in the footer',
 		'class'         => '',
-		'before_widget' => '<div class="col-xs-12">',
+		'before_widget' => '<div class="col-sm-3 col-xs-6">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widgettitle">',
 		'after_title'   => '</h4>' );

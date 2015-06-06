@@ -1,81 +1,14 @@
-<section class="call-to-action bg-yellow">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3 class="">
-                    Votre entreprise n'est pas encore dans notre base? <br><hr>
-                    N'attendez pas plus longtemps, inscrivez votre entreprise dans l'annuaire du pays, nous offrons un service de haute qualité à un prix abordable.
-                    <hr>$100 US ou 5000 Gourdes / Année!
-                </h3>
-            </div>
-            <div class="col-sm-6">
-                <h3>
-                    Aller, assurez la visiblité de votre entreprise. <hr>Inscrivez votre entreprise aujourd'hui, et faites partie de la famille!
-                    <hr>Vous payez seulement $100 US ou 5000 Gourdes pour une année!
-                </h3>
-            </div>
-            <br>
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <hr>
-                        <a href="<?php echo home_url('/inscription'); ?>" class="btn btn-call-to-action btn-lg btn-block">
-                            Inscrivez votre entreprise!
-                        </a>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include_once 'cta.php'; ?>
 
-
-<?php
-$args = array(
-    'post_type'     => array('post', 'entreprise'),
-    'posts_per_page' => 8,
-    'meta_key'      => 'ahshowsponsor',
-    'meta_value'    => 1
-);
-$query = new WP_Query( $args );
-
-if ( $query->have_posts() ): ?>
-
-<section class="sponsors bg-white">
-    <div class="container">
-        <h3 class="text-center"><span class="glyphicon glyphicon-heart"></span> L'Annuaire d'Haiti est fièrement parrainé par:</h3>
-        <div class="row marketing">
-
-         <?php while( $query->have_posts() ) : $query->the_post();?>
-            <div class="col-sm-3 col-xs-6">
-               <p>
-                    <?php
-                    $attr = array(
-                        'class' => "img-bordered img-rounded img-responsive",
-                        'alt'   => get_the_title(),
-                        'title' => get_the_title()
-                    ); ?>
-
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail( 'ah-logo', $attr ); ?>
-                    </a>
-               </p>
-            </div>
-
-            <?php endwhile; ?>
-
-        </div>
-        <h3 class="text-center"><span class="glyphicon glyphicon-star"></span> Nous parrainer, ça vous tente? Aller, <a href="<?php echo home_url('/contact' ); ?>">Contactez-nous</a>.</h3>
-    </div>
-</section>
-
-<?php endif; ?>
+<?php include_once 'sponsors.php'; ?>
 
 
 <section class="footer" >
     <div class="container">
         <div class="row">
+
+            <?php if ( ! dynamic_sidebar('sidebar-footer-1') ): ?>
+
             <div class="col-sm-3 col-xs-6">
                 <h4 id="cat-entreprise-foot">Catégorie d'Entreprises</h4>
                 <ul class="list-unstyled">
@@ -96,6 +29,11 @@ if ( $query->have_posts() ): ?>
                     ?>
                 </ul>
             </div>
+
+            <?php endif; ?>
+
+            <?php if ( ! dynamic_sidebar('sidebar-footer-2') ): ?>
+
             <div class="col-sm-3 col-xs-6">
                 <h4 id="cat-entreprise-foot">Entreprises par Département</h4>
                 <ul class="list-unstyled">
@@ -135,6 +73,11 @@ if ( $query->have_posts() ): ?>
                     ?>
                 </ul>
             </div>
+
+            <?php endif; ?>
+
+            <?php if ( ! dynamic_sidebar('sidebar-footer-3') ): ?>
+
             <div class="col-sm-3 col-xs-6">
                 <h4 id="cat-entreprise-foot">Entreprises par Commune</h4>
                 <ul class="list-unstyled">
@@ -156,12 +99,18 @@ if ( $query->have_posts() ): ?>
                 </ul>
             </div>
 
-            <?php $sidebars = array( 2, 3, 4 );
-            foreach ($sidebars  as $sidebar ): ?>
-                <div class="col-sm-3 col-xs-12">
-                    <?php dynamic_sidebar( 'sidebar-footer-' . $sidebar ); ?>
-                </div>
-            <?php endforeach ?>
+            <?php endif; ?>
+
+            <?php if ( ! dynamic_sidebar('sidebar-footer-4') ): ?>
+
+            <div class="col-sm-3 col-xs-12">
+                <h4>À Propos de L'Annuaire d'Haiti</h4>
+                <p>
+                    L'Annuaire d'Haiti est le plus grand site de référencement d'entreprises du pays. Nous offrons un service de recensement pour petites, moyennes et grosses entreprises. Notre base de données grandit quotidiennement avec l'ajout de nouvelles entreprises, qui comprennent l'importance d'être visible en ligne et être à disposition de nouveaux clients qui veulement savoir comment bénéficier de leur service au pays. En plus, à AH nous sommes une famille. <a href="/inscription">Rejoignez-nous</a>!
+                </p>
+            </div>
+
+            <?php endif; ?>
 
         </div>
     </div>

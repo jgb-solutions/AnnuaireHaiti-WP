@@ -6,18 +6,17 @@
 <?php
 
 $args = array(
-	'posts_per_page' => 8,
+	'posts_per_page' => 4,
 	'post_type'		=> 'entreprise'
 );
 
 $query = new WP_Query( $args );
 
-if ( $query->have_posts() ):
-?>
+if ( $query->have_posts() ): ?>
 
 <section class="entries">
     <div class="container">
-        <h2 class="text-center">Dernières entrées dans <a href="<?php echo home_url('/entreprises' ); ?>">notre base</a></h2>
+        <h2 class="text-center">Entreprises récentes entrées dans <a href="<?php echo home_url('/entreprises' ); ?>">notre base</a></h2>
         <div class="row marketing">
 
         <?php while( $query->have_posts() ) : $query->the_post(); ?>
