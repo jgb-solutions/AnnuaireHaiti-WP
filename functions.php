@@ -74,27 +74,7 @@ function ah_widgets_init() {
 }
 add_action( 'widgets_init', 'ah_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-function ah_scripts() {
-	wp_enqueue_style( 'ah-bootrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	// wp_enqueue_style( 'ah-fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
-	wp_enqueue_style( 'ah-gfonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' );
-	wp_enqueue_style( 'ah-site', get_template_directory_uri() . '/css/site.css' );
-
-	wp_enqueue_script( 'ah-bootrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
-	wp_enqueue_script( 'ah-site-js', get_template_directory_uri() . '/js/site.js', array('jquery'), '', true );
-	wp_localize_script(
-		'ah-site-js',
-		'AH_JS',
-		array(
-			'site_url'	=> home_url(),
-			'api_url'	=> home_url('/wp-json')
-		)
-	);
-}
-add_action( 'wp_enqueue_scripts', 'ah_scripts' );
+require_once 'scripts.php';
 
 /**
  * Implement the Custom Header feature.
