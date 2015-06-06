@@ -2,8 +2,8 @@
 
 function ah_scripts()
 {
-    $url = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js';
-    $test_url = @fopen( $url,'r' );
+    $url = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'
+    $test_url = @fopen( $url, 'r' );
 
     if ( $test_url !== false ) {
         wp_deregister_script( 'jquery' );
