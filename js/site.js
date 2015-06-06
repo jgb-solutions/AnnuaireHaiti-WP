@@ -19,7 +19,7 @@
 
 		var $div = '';
 
-		$.get('http://wp.dev/wp-json/posts?type[]=post&type[]=entreprise&filter[s]=' + $(this).val(), function( data ) {
+		$.get( AH_JS.api_url + '/posts?type[]=post&type[]=entreprise&filter[s]=' + $(this).val(), function( data ) {
 
 			if ( data.length > 0 ) {
 				$.each( data, function(i, el) {
