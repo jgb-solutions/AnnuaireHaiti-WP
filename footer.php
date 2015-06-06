@@ -106,7 +106,7 @@
             <div class="col-sm-3 col-xs-12">
                 <h4>À Propos de L'Annuaire d'Haiti</h4>
                 <p>
-                    L'Annuaire d'Haiti est le plus grand site de référencement d'entreprises du pays. Nous offrons un service de recensement pour petites, moyennes et grosses entreprises. Notre base de données grandit quotidiennement avec l'ajout de nouvelles entreprises, qui comprennent l'importance d'être visible en ligne et être à disposition de nouveaux clients qui veulement savoir comment bénéficier de leur service au pays. En plus, à AH nous sommes une famille. <a href="/inscription">Rejoignez-nous</a>!
+                    L'Annuaire d'Haiti est le plus grand site de référencement d'entreprises du pays. Nous offrons un service de recensement pour petites, moyennes et grosses entreprises. Notre base de données grandit quotidiennement avec l'ajout de nouvelles entreprises, qui comprennent l'importance d'être visible en ligne et être à disposition de nouveaux clients qui veulent savoir comment bénéficier de leur service au pays. En plus, à AH nous sommes une famille. <a href="/inscription">Rejoignez-nous</a>!
                 </p>
             </div>
 
