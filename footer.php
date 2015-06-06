@@ -10,7 +10,7 @@
             <?php if ( ! dynamic_sidebar('sidebar-footer-1') ): ?>
 
             <div class="col-sm-3 col-xs-6">
-                <h4 id="cat-entreprise-foot">Catégorie d'Entreprises</h4>
+                <h4 class="cat-entreprise-foot">Catégorie d'Entreprises</h4>
                 <ul class="list-unstyled">
                     <?php
 
@@ -35,7 +35,7 @@
             <?php if ( ! dynamic_sidebar('sidebar-footer-2') ): ?>
 
             <div class="col-sm-3 col-xs-6">
-                <h4 id="cat-entreprise-foot">Entreprises par Département</h4>
+                <h4 class="cat-entreprise-foot">Entreprises par Département</h4>
                 <ul class="list-unstyled">
                     <?php
 
@@ -54,7 +54,7 @@
                     ?>
                 </ul>
 
-                <h4 id="cat-entreprise-foot">Entreprises par Ville</h4>
+                <h4 class="cat-entreprise-foot">Entreprises par Ville</h4>
                 <ul class="list-unstyled">
                     <?php
 
@@ -79,7 +79,7 @@
             <?php if ( ! dynamic_sidebar('sidebar-footer-3') ): ?>
 
             <div class="col-sm-3 col-xs-6">
-                <h4 id="cat-entreprise-foot">Entreprises par Commune</h4>
+                <h4 class="cat-entreprise-foot">Entreprises par Commune</h4>
                 <ul class="list-unstyled">
                     <?php
 
