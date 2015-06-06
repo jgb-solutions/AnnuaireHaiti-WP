@@ -4,7 +4,7 @@
 <section class="content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 left-content">
+            <div class="col-sm-8 left-content bg-white">
 
 				<?php if ( have_posts() ): ?>
 					<h2 class="text-center">Résultats pour: <?php echo esc_attr( get_search_query() ); ?></h2>
@@ -40,6 +40,7 @@
 				<?php endwhile; ?>
 				<?php else: ?>
 					<h2 class="text-center">Désolé! On a rien trouvé pour: <?php echo esc_attr( get_search_query() ); ?></h2>
+					<hr>
 					<p>Utilisez la forme pour rechercher une entreprise ou un article ou retournez sur <a href="<?php echo home_url('/'); ?>">la page d'accueil.</a></p>
 					<p><?php get_search_form(); ?></p>
 				<?php endif; ?>
