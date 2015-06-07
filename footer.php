@@ -117,15 +117,30 @@
     <hr>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 text-center">
+                <p class="row">
+                        <a href="https://twitter.com/annuairehaiti" target="_blank" class="col-xs-4"><i class="fa fa-2x fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/annuairehaiti" target="_blank" class="col-xs-4"><i class="fa fa-2x fa-facebook"></i></a>
+                        <a href="https://plus.google.com/106816270262102955445/posts" target="_blank" class="col-xs-4"><i class="fa fa-2x fa-google-plus"></i></a>
+                </p>
+                <br>
                 <p>
                     <a href="http://www.annuairehaiti.com">
                         <img class="img-responsive img-rounded" src="<?php echo get_template_directory_uri(); ?>/images/lannuaire-dhaiti-300x111.png">
                     </a>
                 </p>
-                <p class="text-center">&copy; 2015 <strong>L'Annuaire d'Haiti</strong></p>
+                <p>&copy; 2015 <strong>L'Annuaire d'Haiti</strong></p>
             </div>
+            <br class="visible-xs">
+             <br class="visible-xs">
             <div class="col-sm-6 text-center">
+                <p class="row">
+                        <a href="https://twitter.com/jgbneatdesign" target="_blank" class="col-xs-3"><i class="fa fa-2x fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/jgbnd" target="_blank" class="col-xs-3"><i class="fa fa-2x fa-facebook"></i></a>
+                        <a href="https://plus.google.com/+JeanGerardBousiquot_ND" target="_blank" class="col-xs-3"><i class="fa fa-2x fa-google-plus"></i></a>
+                        <a href="https://github.com/jgbneatdesign" target="_blank" class="col-xs-3"><i class="fa fa-github fa-2x"></i></a>
+                </p>
+                <br>
                 <p>
                     <a href="http://www.jgbnd.com" target="_blank">
                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/logo-jgbnd.png">
