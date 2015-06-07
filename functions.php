@@ -118,3 +118,4 @@ require get_template_directory() . '/inc/jetpack.php';
 require 'wp_bootstrap_navwalker.php';
 require 'custom_functions.php';
 require 'pagination.php';
+require_once 'post_view_count.php';

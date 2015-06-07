@@ -40,4 +40,13 @@
 
 	});
 
+	var pvc 	= $('.post-view-count'),
+		action	= 'post_view_count',
+		post_id = pvc.data('id');
+
+	$.get( AH_JS.ajax_url + '?action=' + action + '&post_id=' + post_id, function( data )
+	{
+		pvc.hide().text( data ).fadeIn('slow');
+	});
+
 })( jQuery );

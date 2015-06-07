@@ -26,7 +26,7 @@ if ( $query->have_posts() ) : ?>
 			<div class="row marketing">
 			  <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4 col-xs-4">
 
 					<?php
 					$attr = array(
