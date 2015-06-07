@@ -18,9 +18,8 @@ function ah_scripts()
     //     wp_enqueue_style( 'ah-fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
     //     wp_enqueue_script( 'ah-bootrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
     // }
-
     wp_enqueue_style( 'ah-gfonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' );
-    wp_enqueue_style( 'ah-site', get_template_directory_uri() . '/css/site.css' );
+    wp_enqueue_style( 'ah-site', get_template_directory_uri() . '/css/site.css', array('ah-bootrap') );
     wp_enqueue_script( 'ah-site-js', get_template_directory_uri() . '/js/site.js', array('jquery'), '', true );
     wp_localize_script(
         'ah-site-js',
