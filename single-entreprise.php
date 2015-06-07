@@ -261,6 +261,10 @@ $site_web	= ahgetfield('site_web');
                             </div>
                         </div>
 
+                        <div class="row">
+                            <?php dynamic_sidebar('sidebar-below-content'); ?>
+                        </div>
+
 						<?php include_once 'related-entreprises.php'; ?>
 
                     </div>

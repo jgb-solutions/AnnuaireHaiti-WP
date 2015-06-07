@@ -17,8 +17,8 @@ $query = new WP_Query( $args );
 
 if ( $query->have_posts() ) : ?>
 
-<hr>
 <div class="row">
+	<hr>
 	<h3 class="text-center">Vous pourriez aussi être intéressé par:</h3>
 	<div class="row marketing">
 	  <?php while ( $query->have_posts() ) : $query->the_post(); ?>

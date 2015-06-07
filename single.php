@@ -45,6 +45,10 @@
 
 				<?php endwhile; // end of the loop. ?>
 
+				<div class="row">
+                    <?php dynamic_sidebar('sidebar-below-content'); ?>
+                </div>
+
 				<?php include_once 'related-posts.php'; ?>
 
 				<?php

@@ -50,16 +50,31 @@ add_action( 'after_setup_theme', 'ah_setup' );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function ah_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar Right' ),
-		'id'            => 'sidebar-right',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
+function ah_widgets_init()
+{
+	register_sidebar(
+		array(
+			'name'          => __( 'Sidebar Right' ),
+			'id'            => 'sidebar-right',
+			'description'   => '',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>'
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Sidebar Below Content' ),
+			'id'            => 'sidebar-below-content',
+			'description'   => '',
+			'before_widget' => '<hr><div id="%1$s" class="col-sm-12 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>'
+		)
+	);
 
 	$args = array(
 		'name'          => __('Sidebar Footer %d'),
