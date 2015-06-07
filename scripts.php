@@ -6,7 +6,7 @@ function ah_scripts()
     // $test_url = @fopen( $url,'r' );
     // if ( $test_url !== false ) {
         wp_deregister_script( 'jquery' );
-        wp_register_script( 'jquery', $url );
+        wp_register_script( 'jquery', $url, '', '', true );
 
         wp_enqueue_style( 'ah-bootrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' );
         wp_enqueue_style( 'ah-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
