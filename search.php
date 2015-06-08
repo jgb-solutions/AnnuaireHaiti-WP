@@ -1,3 +1,15 @@
+<?php
+
+$i = 0;
+
+while ( have_posts() ): the_post();
+	$i++;
+	$url = get_the_permalink();
+endwhile;
+
+if ( $i == 1 ) header( 'location:' . $url );
+
+?>
 
 <?php get_header(); ?>
 
@@ -9,6 +21,7 @@
 				<?php if ( have_posts() ): ?>
 					<h2 class="text-center">Résultats pour: <?php echo esc_attr( get_search_query() ); ?></h2>
 					<hr>
+
             	<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="row">
