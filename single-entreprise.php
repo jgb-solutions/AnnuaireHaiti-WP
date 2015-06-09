@@ -31,8 +31,26 @@ $site_web	= ahgetfield('site_web');
                     </h2>
                     <div class="row">
 
+                        <div class="modal fade" id="imageModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" hidden=true>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body"></div>
+                                    <div class="modal-footer" hidden=true>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
     					<?php if ( ahget('bannerimage' ) ): ?>
-                    		<img class="img-responsive" src="<?php echo ahget('bannerimage' ); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" width="100%">
+                            <a href='#imageModal'>
+                		      <img class="img-responsive" width="768px" height="317" src="<?php echo ahget('bannerimage' ); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" width="100%">
+                            </a>
                   	 	<?php else: ?>
                   	 		<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/banner-sample.png" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" style="width:100%">
                   	 	<?php endif;?>
@@ -46,8 +64,11 @@ $site_web	= ahgetfield('site_web');
     									'class' => "img-rounded img-bordered img-responsive business-logo",
     									'alt'   => get_the_title(),
     									'title' => get_the_title()
-    								);
-    			                	the_post_thumbnail( 'ah-logo', $attr ); ?>
+    								);?>
+
+                                    <a href="#imageModal">
+                                        <?php the_post_thumbnail( 'ah-logo', $attr ); ?>
+                                    </a>
 
                                 </div>
                                 <div class="col-sm-8 col-xs-7 social-group">

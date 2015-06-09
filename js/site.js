@@ -61,4 +61,22 @@
 		pvc.hide().text( data ).fadeIn('slow');
 	});
 
+	$('a[href=#imageModal]').on('click', function( e ) {
+		$this = $(this);
+		e.preventDefault();
+		$('#imageModal')
+			.modal()
+			.on('shown.bs.modal', function () {
+				$(this).find('.modal-body').html( '<img src="' + $this.find('img').attr('src') + '">' );
+    			$(this).find('.modal-dialog')
+    				.css({
+    					width: parseInt( $this.find('img').attr('width') ) + 30,
+                        height: parseInt( $this.find('img').attr('height') ) + 30,
+                        'max-height': '100%',
+                        'max-width': '100%',
+                        margin: '5em auto'
+                     });
+			});
+	});
+
 })( jQuery );
