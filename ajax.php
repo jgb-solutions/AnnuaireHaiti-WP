@@ -24,7 +24,7 @@ add_action( 'wp_ajax_ah_search', 'ah_search' );
 
 function ah_search()
 {
-	$query 	= $_GET['s'];
+	$query 	= isset( $_GET['s'] ) ? htmlspecialchars( $_GET['s'] ) : '';
 	$r 		= array();
 	$i 		= 0;
 
