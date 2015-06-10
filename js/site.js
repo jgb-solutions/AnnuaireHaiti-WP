@@ -87,6 +87,7 @@
 	var form = $('form#jqueryForm'),
 		results = $('#results'),
 		notice = '',
+		$sucFail,
 		$envoyer = '<span class="glyphicon glyphicon-send"></span>';
 
 	$( document ).on('submit', 'form#jqueryForm', function(e) {
@@ -148,13 +149,20 @@
 					'id'	 : 'resetForm',
 					'text' : 'Envoyer un autre message'
 				});
+
 				anchor.prepend( $envoyer + ' ');
 
-				if ( 1 === parseInt( data ) ) $data = '<h4>Email envoyé avec succès!</h4>';
-				else if ( 0 === parseInt( data ) ) $data = 'Echec d\'envoi de l\'email';
+				if ( 1 === parseInt( data ) ) {
+					$data = '<h4>E-mail envoyé avec succès!</h4>';
+					$sucFail = '<div class="bg-success left-content col-sm-12 text-center"></div>'
+				}
+				else if ( 0 === parseInt( data ) ) {
+					$data = '<h4>Echec d\'envoi de l\'e-mail</h4>';
+					$sucFail = '<div class="bg-danger left-content col-sm-12 text-center"></div>'
+				}
 
-				$pSuc = $('<div class="bg-success left-content col-sm-12 text-center"></div>').html( $data ).append( anchor );
-				results.html( $pSuc ) ;
+				$pSuc = $( $sucFail ).html( $data ).append( anchor );
+				results.html( $pSuc ).show();
 
 				$this.find('button[type=submit]').text(' Envoyer').prepend( $envoyer );
 
@@ -171,7 +179,7 @@
 
 		form[0].reset();
 		form.slideDown('slow', function() {
-			results.hide();
+			results.fadeOut();
 			$(this).find('input')[0].focus();
 		});
 

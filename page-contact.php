@@ -52,7 +52,7 @@ if ( isset( $_POST['submit'] ) ) {
 
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-center">Contactez-nous pas email ou téléphone</h2>
+                <h2 class="text-center">Contactez-nous par e-mail ou téléphone</h2>
                 <hr>
             </div>
 
@@ -67,10 +67,10 @@ if ( isset( $_POST['submit'] ) ) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="email" class="col-sm-2">Email</label>
+                        <label for="email" class="col-sm-2">E-mail</label>
                         <div class="col-sm-10">
                             <input name="email" type="email" class="form-control" id="email" placeholder="Rentrez votre email" >
-                            <span class="text-danger error">S'il vous plaît entrez votre email</span>
+                            <span class="text-danger error">S'il vous plaît entrez votre e-mail</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -81,7 +81,7 @@ if ( isset( $_POST['submit'] ) ) {
                                 <option value="Je veux travailler avec vous">Je veux travailler avec vous</option>
                                 <option value="J'ai besoin d'aide">J'ai besoin d'aide</option>
                             </select>
-                            <span class="text-danger error">S'il vous choisissez un sujet</span>
+                            <span class="text-danger error">S'il vous plaît choisissez un sujet</span>
                         </div>
                       </div>
                       <div class="form-group">
