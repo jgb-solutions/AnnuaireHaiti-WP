@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <section class="content">
-    <div class="container bg-white left-content">
+    <div class="container bg-info left-content">
 
         <div class="row">
             <div class="col-sm-12">
@@ -33,8 +33,9 @@
                         <div class="col-sm-10">
                             <select name="subject" class="form-control" id="subject">
                                 <option value="">Choisissez un sujet...</option>
-                                <option value="Je veux travailler avec vous">Je veux travailler avec vous</option>
-                                <option value="J'ai besoin d'aide">J'ai besoin d'aide</option>
+                                <option value="Travail">Je veux travailler avec vous</option>
+                                <option value="Aide">J'ai besoin d'aide</option>
+                                <option value="Salution">J'aimerais seulement vous dire bonjour!</option>
                             </select>
                             <span class="text-danger error">S'il vous plaît choisissez un sujet</span>
                         </div>
