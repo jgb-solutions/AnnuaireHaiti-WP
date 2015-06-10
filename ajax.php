@@ -1,5 +1,4 @@
 <?php
-
 /*
 ******* Post View Count **********
 */
@@ -15,6 +14,7 @@ function post_view_count()
 	echo $newView;
 	die();
 }
+
 /*
 ********* AH Search ***********
 */
@@ -42,4 +42,55 @@ function ah_search()
 	endif;
 
 	wp_send_json( $r );
+}
+
+/*
+* Contact Form
+*/
+/* AJAX check  */
+
+add_action( 'wp_ajax_nopriv_ah_contact_form', 'ah_contact_form' );
+add_action( 'wp_ajax_ah_contact_form', 'ah_contact_form' );
+
+function ah_contact_form()
+{
+	$mailInfo = array();
+	$notice = '';
+
+
+	if ( $_REQUEST['name'] === '' ) {
+	  $notice = 'Please enter your name. <br />';
+	}
+	if ( $_REQUEST['email'] === '' ) {
+	$notice .= 'Please enter your email. <br />';
+	}
+	if ( $_REQUEST['subject'] === '' ) {
+	$notice .= 'Please Enter your subject. <br />';
+	}
+	if ( $_REQUEST['message'] === '' ) {
+	$notice .= 'Please Enter your message';
+	}
+
+	if ( $notice === '' ) {
+
+		$from      = htmlspecialchars( $_POST['email'] );
+		$fromName  = htmlspecialchars( $_POST['name'] );
+		$subject   = isset( $_POST['subject'] ) ? $_POST['subject'] : 'Champ suject vide';
+		$message   = $_POST['message'];
+		$headers[] = 'From: ' . $fromName . '<' . $from . '>';
+		$headers[] = 'Reply-To: ' . $fromName . '<' . $from . '>';
+		$headers[] = 'Content-Type: text/html; charset=UTF-8';
+
+
+		if ( wp_mail( get_bloginfo('admin_email' ), $subject, $message, $headers ) ) {
+			echo 1;
+		 	// echo 'You Sent <pre>' . print_r($_REQUEST, true) . '</pre>';
+		} else {
+		 	// echo 'Email not sent';
+		 	echo 0;
+		}
+	} else {
+		echo '<p style="color:red">From server <br />' . $notice . '</p>';
+	}
+	die();
 }

@@ -25,9 +25,9 @@ function ah_scripts()
         'ah-site-js',
         'AH_JS',
         array(
-            'site_url'  => home_url(),
-            'api_url'   => home_url('/wp-json'),
-            'ajax_url'  => admin_url('/admin-ajax.php')
+            'site_url'      => home_url(),
+            'api_url'       => home_url('/wp-json'),
+            'ajax_url'      => admin_url('/admin-ajax.php')
         )
     );
 }

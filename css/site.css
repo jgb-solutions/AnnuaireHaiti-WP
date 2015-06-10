@@ -375,3 +375,7 @@ section.call-to-action h3 {
     color: #FAD008;
     text-shadow: none;
 }
+
+span.error {
+    display: none;
+}
