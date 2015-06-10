@@ -73,16 +73,16 @@ function ah_contact_form()
 
 	if ( $notice === '' ) {
 
-		$from      = htmlspecialchars( $_POST['email'] );
-		$fromName  = htmlspecialchars( $_POST['name'] );
-		$subject   = isset( $_POST['subject'] ) ? $_POST['subject'] : 'Champ suject vide';
+		$from      = $_POST['email'];
+		$fromName  = $_POST['name'];
+		$subject   = isset( $_POST['subject'] ) ? $_POST['subject'] : 'Champ sujet vide';
 		$message   = $_POST['message'];
 		$headers[] = 'From: ' . $fromName . '<' . $from . '>';
 		$headers[] = 'Reply-To: ' . $fromName . '<' . $from . '>';
 		$headers[] = 'Content-Type: text/html; charset=UTF-8';
 
 
-		if ( wp_mail( get_bloginfo('admin_email' ), $subject, $message, $headers ) ) {
+		if ( wp_mail( get_bloginfo('admin_email'), $subject, $message, $headers ) ) {
 			echo 1;
 		 	// echo 'You Sent <pre>' . print_r($_REQUEST, true) . '</pre>';
 		} else {

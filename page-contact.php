@@ -1,48 +1,3 @@
-<?php
-
-$mailInfo = array();
-$notice = '';
-
-if ( isset( $_POST['submit'] ) ) {
-
-  if ( $_POST['name'] === '' ) {
-    $notice = 'Please enter your name. <br />';
-  }
-  if ( $_POST['email'] === '' ) {
-    $notice .= 'Please enter your email. <br />';
-  }
-  if ( $_POST['subject'] === '' ) {
-    $notice .= 'Please Enter your subject. <br />';
-  }
-  if ( $_POST['message'] === '' ) {
-    $notice .= 'Please Enter your message';
-  }
-
-  if ( $notice === '' ) {
-
-    $mailInfo = array(
-      'username'  => 'jgbneatdesign@gmail.com',
-      'password'  => 'tkp89neatdesigntkp89',
-      'from'      => ($_POST['email']) ?: 'jgbneatdesign@gmail.com',
-      'fromName'  => ($_POST['name']) ?: 'Jean Gerard',
-      'to'        => 'tikwenpam@gmail.com',
-      'toName'    => 'Ti Kwen Pam',
-      'info'      => 'JGB! Neat Design | www.JGBND.com',
-      'subject'   => ($_POST['subject']) ?: 'Default Subject',
-      'body'      => ($_POST['message']) ?: 'Default Body',
-      'bodyAlt'   => 'Defualt Alternate Body'
-    );
-
-    if ( sendmail( $mailInfo ) ) {
-      echo 'Email sent </br> and you sent this data <pre>' . print_r($_POST, true) . '</pre>';
-    } else {
-     echo 'Email not sent';
-    }
-  } else {
-    echo '<p style="color:red">' . $notice . '</p>';
-  }
-}?>
-
 <?php get_header(); ?>
 
 <?php get_header(); ?>
@@ -101,10 +56,14 @@ if ( isset( $_POST['submit'] ) ) {
                     <div id="results"></div>
                 </div>
 
-                <div class="col-sm-3">
+                <div class="col-sm-5">
+
+                    <p>
+                        Si la forme ne fonctionne pas ou si vous voulez nous contacter directement, appelez-nous.
+                    </p>
+
                     <address>
-                        <strong>L'Annuaire d'Haiti</strong><br><br/>
-                        Delmas, Haiti<br>
+                        Port-au-Prince, Haiti<br>
                         <abbr>Tel:</abbr> <a href="tel:+50936478199">(+509) 3647 8199</a><br/>
                         </address>
                         <address>

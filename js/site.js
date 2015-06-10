@@ -99,7 +99,6 @@
 			$email = $this.find('#email'),
 			$subject = $this.find('#subject'),
 			$message = $this.find('textarea#message');
-			console.log( $name.next() );
 
 		if ( $.trim( $name.val() ) === '' ) {
 			notice = 1;
