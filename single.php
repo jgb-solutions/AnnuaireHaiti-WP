@@ -9,7 +9,7 @@
 
 	              	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
-							<h2>
+							<h2 class="text-center">
 								<?php the_title(); ?>
 								<br>
 								<small>Posté le <?php the_date('d/m/Y (h:i a)'); ?> |
