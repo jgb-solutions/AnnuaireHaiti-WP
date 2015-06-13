@@ -11,13 +11,7 @@
                 <hr>
             </div>
 
-                <div class="col-sm-7">
-
-                    <?php the_content(); ?>
-
-                </div>
-
-                <div class="col-sm-5">
+                <div class="col-sm-5 col-sm-push-7">
 
                     <p>
                         Si la forme ne fonctionne pas ou si vous voulez nous contacter directement, appelez-nous.
@@ -32,6 +26,13 @@
                         <a href="mailto:contact@annuairehaiti.com">contact@AnnuaireHaiti.com</a>
                     </address>
                 </div>
+
+                <div class="col-sm-7 col-sm-pull-5">
+
+                    <?php the_content(); ?>
+
+                </div>
+
         </div>
 
     </div>

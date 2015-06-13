@@ -185,4 +185,5 @@
 		e.preventDefault();
 	});
 
+	/********* Gravity Forms Modification ***********/
 })( jQuery );

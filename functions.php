@@ -119,3 +119,4 @@ require 'wp_bootstrap_navwalker.php';
 require 'custom_functions.php';
 require 'pagination.php';
 require_once 'ajax.php';
+require_once 'inc/gravity-forms.php';

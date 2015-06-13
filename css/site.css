@@ -98,6 +98,7 @@ object {
     border: 0;
     border-radius: 0;
 }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a {
     color: white;
@@ -124,6 +125,7 @@ object {
 #navbar {
     background-color: #000000;
     font-weight: bold;
+    border: none;
 }
 
 .entries {
@@ -144,6 +146,10 @@ object {
 
 .footer a {
     color: #fff;
+}
+
+a.text-black {
+    color: #000;
 }
 
 .bg-black {
@@ -383,9 +389,9 @@ span.error {
     display: none;
 }
 
-/*
-* Gravity Forms
-*/
+/***************************
+******* Gravity Forms ******
+****************************/
 
 /* ------------------------------------
 Gravity Forms Bootstrap

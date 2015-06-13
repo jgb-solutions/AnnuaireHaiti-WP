@@ -118,37 +118,37 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 text-center">
-                <p class="row">
-                        <a href="https://twitter.com/annuairehaiti" target="_blank" class="col-xs-4"><i class="fa fa-2x fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/annuairehaiti" target="_blank" class="col-xs-4"><i class="fa fa-2x fa-facebook"></i></a>
-                        <a href="https://plus.google.com/106816270262102955445/posts" target="_blank" class="col-xs-4"><i class="fa fa-2x fa-google-plus"></i></a>
-                </p>
+                <div class="row">
+                    <div class="col-xs-3"><a href="https://twitter.com/annuairehaiti" target="_blank" class="btn btn-info btn-large btn-block"><i class="fa fa-2x fa-twitter"></i></a></div>
+                    <div class="col-xs-3"><a href="https://www.facebook.com/annuairehaiti" target="_blank" class="btn btn-primary btn-large btn-block"><i class="fa fa-2x fa-facebook"></i></a></div>
+                    <div class="col-xs-3"><a href="https://plus.google.com/106816270262102955445/posts" target="_blank" class="btn btn-danger btn-large btn-block"><i class="fa fa-2x fa-google-plus"></i></a></div>
+                </div>
                 <br>
                 <p>
-                    <a href="http://www.annuairehaiti.com">
+                    <a href="http://annuairehaiti.com">
                         <img class="img-responsive img-rounded" src="<?php echo get_template_directory_uri(); ?>/images/lannuaire-dhaiti-300x111.png">
                     </a>
                 </p>
-                <p>&copy; 2015 <strong>L'Annuaire d'Haiti</strong></p>
+                <p>&copy; 2015 <strong><a href="http://annuairehaiti.com">L'Annuaire d'Haiti</a></strong></p>
             </div>
             <br class="visible-xs">
              <br class="visible-xs">
             <div class="col-sm-6 text-center">
-                <p class="row">
-                        <a href="https://twitter.com/jgbneatdesign" target="_blank" class="col-xs-3"><i class="fa fa-2x fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/jgbnd" target="_blank" class="col-xs-3"><i class="fa fa-2x fa-facebook"></i></a>
-                        <a href="https://plus.google.com/+JeanGerardBousiquot_ND" target="_blank" class="col-xs-3"><i class="fa fa-2x fa-google-plus"></i></a>
-                        <a href="https://github.com/jgbneatdesign" target="_blank" class="col-xs-3"><i class="fa fa-github fa-2x"></i></a>
-                </p>
+                <div class="row">
+                    <div class="col-xs-3"><a href="https://twitter.com/jgbneatdesign" target="_blank" class="btn btn-info btn-large btn-block"><i class="fa fa-2x fa-twitter"></i></a></div>
+                    <div class="col-xs-3"><a href="https://www.facebook.com/jgbnd" target="_blank" class="btn btn-primary btn-large btn-block"><i class="fa fa-2x fa-facebook"></i></a></div>
+                    <div class="col-xs-3"><a href="https://plus.google.com/+JeanGerardBousiquot_ND" target="_blank" class="btn btn-danger btn-large btn-block"><i class="fa fa-2x fa-google-plus"></i></a></div>
+                    <div class="col-xs-3"><a href="https://github.com/jgbneatdesign" target="_blank" class="btn btn-default text-black btn-block"><i class="fa fa-github fa-2x"></i></a></div>
+                </div>
                 <br>
                 <p>
-                    <a href="http://www.jgbnd.com" target="_blank">
+                    <a href="http://jgbnd.com" target="_blank">
                         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/logo-jgbnd.png">
                     </a>
                 </p>
                 <p>
                     Une production de <strong>
-                    <a href="http://www.jgbnd.com" target="_blank">JGB! Neat Design</a></strong>
+                    <a href="http://jgbnd.com" target="_blank">JGB! Neat Design</a></strong>
                 </p>
             </div>
         </div>
