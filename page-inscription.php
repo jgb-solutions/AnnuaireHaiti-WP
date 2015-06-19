@@ -14,6 +14,14 @@
                 <div class="col-sm-5 col-sm-push-7">
 
                     <p>
+                        ** Il est important de noter que tous les champs avec un star près de leur titre sont obligatoires.**
+                    </p>
+
+                    <p>
+                        Après que vous aurez rempli la forme et l'aurez soumise, vous serez diriger sur une page vous permettant de choisir une méthode de paiement.
+                    </p>
+
+                    <p>
                         Si la forme ne fonctionne pas ou si vous voulez nous contacter directement, appelez-nous.
                     </p>
 

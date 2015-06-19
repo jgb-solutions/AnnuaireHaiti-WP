@@ -58,11 +58,18 @@
 	var pvc 	= $('.post-view-count'),
 		post_id = pvc.data('id');
 
-	$.get( AH_JS.ajax_url + '?action=post_view_count&post_id=' + post_id, function( data )
-	{
-		pvc.hide().text( data ).fadeIn('slow');
-	});
+	if ( post_id ) {
+		$.get( AH_JS.ajax_url + '?action=post_view_count&post_id=' + post_id, function( data )
+		{
+			pvc.hide().text( data ).fadeIn('slow');
+		});
+	}
 
+/*
+-------------------------------------------------
+------------- Modal Search stuffs ---------------
+-------------------------------------------------
+*/
 	$('a[href=#imageModal]').on('click', function( e ) {
 		$this = $(this);
 		e.preventDefault();
