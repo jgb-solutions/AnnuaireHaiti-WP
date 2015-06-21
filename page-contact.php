@@ -15,18 +15,19 @@
 
                 <p>
                     Si la forme ne fonctionne pas ou si vous voulez nous contacter directement, appelez-nous.
-                </p>
 
-                <address class="hidden-xs">
-                    Port-au-Prince, Haiti<br>
-                    <abbr>Tel:</abbr> <a href="tel:+50936478199">(+509) 3647 8199</a><br/>
-                    <strong>Jean Gérard Bousiquot (CEO)</strong><br>
-                    <a href="mailto:contact@annuairehaiti.com">contact@AnnuaireHaiti.com</a>
-                </address>
+                    <address>
+                        Port-au-Prince, Haiti<br>
+                        <abbr>Tel:</abbr> <a href="tel:+50936478199">(+509) 3647 8199</a><br/><br>
+                        <strong>L'équipe AH</strong><br>
+                        <a href="mailto:contact@annuairehaiti.com">contact@AnnuaireHaiti.com</a>
+                    </address>
+                </p>
             </div>
 
             <div class="col-sm-7 col-sm-pull-5">
 
+                <hr class="visible-xs">
                 <form method="post" id="jqueryForm" class="form-horizontal">
                   <div class="form-group">
                     <label for="name" class="col-sm-2">Nom</label>
@@ -49,7 +50,7 @@
                             <option value="">Choisissez un sujet...</option>
                             <option value="Travail">Je veux travailler avec vous</option>
                             <option value="Aide">J'ai besoin d'aide</option>
-                            <option value="Salution">J'aimerais seulement vous dire bonjour!</option>
+                            <option value="Salution">J'aimerais seulement vous dire bonjour</option>
                         </select>
                         <span class="text-danger error">S'il vous plaît choisissez un sujet</span>
                     </div>

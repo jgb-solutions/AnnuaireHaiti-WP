@@ -19,6 +19,8 @@
 
                 <div class="col-sm-5">
 
+                    <hr class="visible-xs">
+
                     <form method="post" id="jqueryForm">
                       <div class="form-group">
                         <label for="name">Votre Nom ou celui de votre entreprise</label>
@@ -38,6 +40,7 @@
                                 <option value="Communication Visuelle">Communication Visuelle</option>
                                 <option value="Création Appli Mobile">Création d'application Mobile</option>
                                 <option value="Promotion">Promotion pour votre entreprise</option>
+                                <option value="Autre">Autre service (non listé)</option>
                             </select>
                             <span class="text-danger error">S'il vous plaît choisissez un type de services</span>
                       </div>
@@ -52,7 +55,7 @@
                     </form>
 
                     <div id="results"></div>
-                    
+
                     <hr>
 
                     <address>
@@ -60,7 +63,7 @@
                         <abbr>Tel:</abbr> <a href="tel:+50936478199">(+509) 3647 8199</a><br/>
                         </address>
                         <address>
-                        <strong>Jean Gérard Bousiquot (CEO)</strong><br>
+                        <strong>L'équipe AH</strong><br>
                         <a href="mailto:contact@annuairehaiti.com">contact@AnnuaireHaiti.com</a>
                     </address>
                 </div>
