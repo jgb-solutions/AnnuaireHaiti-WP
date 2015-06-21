@@ -30,7 +30,7 @@
                         <abbr>Tel:</abbr> <a href="tel:+50936478199">(+509) 3647 8199</a><br/>
                         </address>
                         <address>
-                        <strong>Jean Gérard Bousiquot (CEO)</strong><br>
+                        <strong>L'équipe AH</strong><br>
                         <a href="mailto:contact@annuairehaiti.com">contact@AnnuaireHaiti.com</a>
                     </address>
                 </div>

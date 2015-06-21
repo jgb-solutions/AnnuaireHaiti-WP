@@ -135,6 +135,7 @@
              <br class="visible-xs">
             <div class="col-sm-6 text-center">
                 <div class="row">
+                    <hr class="visible-xs">
                     <div class="col-xs-3"><a href="https://twitter.com/jgbneatdesign" target="_blank" class="btn btn-info btn-large btn-block"><i class="fa fa-2x fa-twitter"></i></a></div>
                     <div class="col-xs-3"><a href="https://www.facebook.com/jgbnd" target="_blank" class="btn btn-primary btn-large btn-block"><i class="fa fa-2x fa-facebook"></i></a></div>
                     <div class="col-xs-3"><a href="https://plus.google.com/+JeanGerardBousiquot_ND" target="_blank" class="btn btn-danger btn-large btn-block"><i class="fa fa-2x fa-google-plus"></i></a></div>
