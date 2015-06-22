@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <section class="content">
-    <div class="container bg-success left-content">
+    <div class="container bg-info left-content">
 
         <div class="row">
             <div class="col-sm-12">
@@ -40,6 +40,7 @@
                                 <option value="Communication Visuelle">Communication Visuelle</option>
                                 <option value="Création Appli Mobile">Création d'application Mobile</option>
                                 <option value="Promotion">Promotion pour votre entreprise</option>
+                                <option value="Gestion Comptes Sociaux/Site web">Gestion de comptes sociaux et de site web</option>
                                 <option value="Autre">Autre service (non listé)</option>
                             </select>
                             <span class="text-danger error">S'il vous plaît choisissez un type de services</span>
