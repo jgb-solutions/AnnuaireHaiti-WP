@@ -18,6 +18,16 @@
                     <div class="col-sm-6" id="cheque-cash">
 
                         <h4>Payez avec chèque/cash/compte bancaire</h4>
+                        
+                        <p>
+                            Nous vous facilitons la tâche, vous n'avez qu'à nous appeler et un de nos agents viendra prendre le chèque/cash pour l'abonnement annuel.
+                        </p>
+                        <p>
+                            Pour faire le paiement par compte bancaire, veuillez vous rendre à un des succursales de la banque ... . Le numéro du compte est ...
+                        </p>
+                        <p>
+                            Nous vous contacterons par e-mail <?php echo isset( $_GET['email'] ) ? '(' . $_GET['email'] . ')' : ''; ?> ou téléphone <?php echo isset( $_GET['tel'] ) ? '(' . $_GET['tel'] . ')' : ''; ?> une fois que le paiement sera effectué.
+                        </p>
 
                     </div>
 
@@ -34,6 +44,9 @@
                         </p>
                         <p>
                             Nous vous contacterons par e-mail <?php echo isset( $_GET['email'] ) ? '(' . $_GET['email'] . ')' : ''; ?> ou téléphone <?php echo isset( $_GET['tel'] ) ? '(' . $_GET['tel'] . ')' : ''; ?> une fois que le paiement sera effectué.
+                        </p>
+                        <p>
+                            Si vous trouvez un problème en effectuant le paiement, vous pouvez toujours nous <a href="<?php echo home_url('/contact' ); ?>">contacter</a> ou nous appeler au <a href="tel:+50936478199">+509 3647 8199</a>. Nous serions ravis de vous aider.
                         </p>
                         <hr>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
